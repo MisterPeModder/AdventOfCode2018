@@ -2,6 +2,9 @@
 
 My solutions the [AdventOfCode 2018](https://adventofcode.com/2018) puzzles.
 
+## Requirements
+jdk 1.8 or higher
+
 ## Building
 ```
 $ ./gradlew build
