@@ -2,14 +2,19 @@
 
 My solutions the [AdventOfCode 2018](https://adventofcode.com/2018) puzzles.
 
+## Building
+```
+$ ./gradlew build
+```
+
 ## Usage
 On Unix:
 ```
-./aoc.sh <exercise> <inputfile>
+$ ./aoc.sh <exercise> <inputfile>
 ```
 On Windows:
 ```
-.\aoc.bat <exercise> <inputfile>
+$ .\aoc.bat <exercise> <inputfile>
 ```
 
 parameters:
