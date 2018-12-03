@@ -36,7 +36,7 @@ public class Ex03a implements Exercise {
 
     public void placeRect(Rectangle rect) {
       for (int ry = rect.y, maxy = rect.y + rect.h; ry < maxy; ++ry)
-        for (int rx = rect.x, maxx = rect.x + rect.h; rx < maxx; ++rx) {
+        for (int rx = rect.x, maxx = rect.x + rect.w; rx < maxx; ++rx) {
           Map<Integer, Integer> line = grid.get(ry);
           if (line == null)
             line = new HashMap<>();
@@ -45,7 +45,7 @@ public class Ex03a implements Exercise {
           if (value != null && value.intValue() != Integer.MAX_VALUE) {
             ++occupied;
             line.put(rx, Integer.MAX_VALUE);
-          } else
+          } else if (value == null)
             line.put(rx, rect.id);
           grid.put(ry, line);
         }
